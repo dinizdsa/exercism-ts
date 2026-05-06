@@ -5,7 +5,3 @@ export function twoFer(name: string | null = null): string {
   
     return `One for ${name}, one for me.`;
 }
-
-console.log(twoFer());
-console.log(twoFer("Alice"));
-console.log(twoFer("Bob"));

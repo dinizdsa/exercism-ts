@@ -9,17 +9,7 @@ export class Matrix {
     return this._rows;
   }
 
-
-
   get columns(): number[][] {
-    return this._rows[0].map((_, col) => this._rows.map(row => {
-        // console.log('row', row);
-        // console.log('col', col);
-        return row[col];
-    }));
+    return this._rows[0].map((_, col) => this._rows.map(row => row[col]));
   }
 }
-
-// const matrix = new Matrix('1 2\n3 4');
-// console.log(matrix.rows);
-// console.log(matrix.columns);
